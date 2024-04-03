@@ -13,7 +13,7 @@ describe("Notification component tests", () => {
     const notification = shallow(<Notifications />);
 
     expect(notification.find("ul")).toBeDefined();
-  });
+[I  });
 
   it("renders three list items", () => {
     const notification = shallow(<Notifications />);

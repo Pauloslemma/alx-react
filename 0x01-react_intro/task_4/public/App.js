@@ -10,7 +10,7 @@ function App() {
         <h1>School dashboard</h1>
       </div>
       <div className="App-body">
-        <p>Login to access the full dashboard</p>
+[I        <p>Login to access the full dashboard</p>
         <form>
           <label htmlFor="email">Email:</label>
           <input type="email" name="email"></input>

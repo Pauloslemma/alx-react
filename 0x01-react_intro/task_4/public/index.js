@@ -12,7 +12,7 @@ root.render(
 );
 
 const rootNotifications = ReactDOM.createRoot(document.getElementById("root-notifications"));
-rootNotifications.render(
+[IrootNotifications.render(
   <React.StrictMode>
     <Notifications />
   </React.StrictMode>
