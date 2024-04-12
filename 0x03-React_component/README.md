@@ -1,1 +1,1 @@
-## 0x03-React_component 2
+## 0x03-React_component 
