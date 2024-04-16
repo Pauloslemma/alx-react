@@ -1,12 +1,20 @@
 import React from 'react';
 import CourseListRow from './CourseListRow';
 import { shallow } from 'enzyme';
+import { StyleSheetTestUtils } from 'aphrodite';
+
+beforeEach(() => {
+	StyleSheetTestUtils.suppressStyleInjection();
+});
+afterEach(() => {
+	StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
 
 describe('Course List Row component test', () => {
 	it('should render without crashing', () => {
 		const wrapper = shallow(<CourseListRow textFirstCell='test' />);
 
-[I		expect(wrapper.exists()).toBe(true);
+		expect(wrapper.exists()).toBe(true);
 	});
 
 	it('should render one cell with colspan = 2 when textSecondCell null', () => {
